@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+html{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  max-width: 500px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #666;
+  background-color: #000;
+/*  background: url(/images/metcube.jpg) no-repeat;
+  background-size: cover;*/
+}
+
+#container{
+  background-color: #00EBB8;
+}
+
+#hero{
+  background-color: #FFFBFA;
+  border: solid 10px #F05C00;
+  height: 300px;
+  max-width: 100%;
+}
+
+#super_heroes{
+  background-color: #F05C00;
+  margin: 0 15px;
+  list-style-type: none;
+}
+/* MEDIA QUERIES */
+
+/* SMALL-ONLY */
+@media screen and (max-width: 40em){
+  body{
+    background-color: #61001A;
+    max-width: 40em;
+  }
+
+  #hero{
+    background-color: #FFFBFA;
+    border: solid 2px #C5100D;
+    height: 300px;
+    max-width: 100%;
+  }
+
+  #super_heroes{
+    background-color: #F4B357;
+    border: solid 2px #61001A;
+    height: 40px;
+    font-size: 11px;
+    margin: 0 15px;
+    padding: 15px;  
+  }  
+}
+
+/* MEDIUM-ONLY */
+@media screen and (min-width: 40.063em) and (max-width: 60em){
+  body{
+    background-color: #FFF;
+    max-width: 60em;
+  }
+
+  #hero{
+    height: 200px;
+    max-width: 100%;
+    background-color: #E7FDF9;
+    border: solid 3px #66ECF5;
+  }
+
+  #super_heroes{
+    height: 40px;
+    max-width: 100%;
+    background-color: #E7FDF9;
+    border: solid 3px #66ECF5;
+    margin: 0 20px;
+  }
+
+  #super_heroes li{
+    background-color: blue;
+    height: 300px;
+    margin: 20px;
+  }
+}
+
+/* LARGE-ONLY */
+@media only screen and (min-width: 60.063em){
+  body{
+    background-color: #66ECF5;
+  }
+
+  #container{
+    background-color: #00EBB8;
+    border: solid 3px #00EBB8;
+  }
+
+  #hero{
+    height: 300px;
+    min-width: 57.562em;
+    margin: 20px;
+    background-color: #FFF;
+    border: none;
+  }
+
+  #super_heroes{
+    background-color: #F1FFE5;
+    height: 100px;
+    min-width: 55.0625em;
+    margin: 20px;
+    padding: 20px;
+    border: none;
+  }
+
+  #super_heroes li{    
+    height: 300px;
+    border-bottom: solid #999 1px
+  }
+}
